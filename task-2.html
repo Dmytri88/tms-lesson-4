@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+</head>
+<body>
+    
+    <script>
+       
+        function del(arr) {
+            
+            if (arr.length % 2 == 0) {
+
+                for (let i = arr.length/2 - 1; i < arr.length/2 + 1; i++) {
+
+                    delete arr [i]
+
+                }
+            }
+            else{
+
+                for (let i = arr.length/2 - 0.5; i < arr.length/2 + 0.5; i++) {
+
+                    delete arr [i]
+
+                }
+
+            }
+
+            return arr;
+
+        }
+      
+        console.log(del([1, 4, 9, 8, 99, 7, 11, 23])); /*четное*/
+        console.log(del([1, 4, 9, 8, 99, 7, 11, 23, 88])); /*нечетное*/
+        
+    </script>
+
+</body>
+</html>
